@@ -1,77 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The recipe app</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css" />
-</head>
+        <title>Recipes App</title>
 
-<body>
-    <div class="mobile-container">
-        <header>
-            <input type="text" />
-            <button id="search"><i class="fas fa-search"></i></button>
-        </header>
-        <div class="fav-container">
-            <span>Favourit meals</span>
-            <ul class="fav-meals">
-                <li>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ9NEqhhJ57VpwMmdVlE80nYZAqS4JQmdbLw&s"
-                        alt="" />
-                    <span>salad</span>
-                </li>
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/3178cb280c.js" crossorigin="anonymous"></script>
 
-                <li>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMZMXZiadPqMswTIXUFkUzoAorXOCf8Nv3A&s"
-                        alt="" /><span>Biryani</span>
-                </li>
-                <li>
-                    <img src="https://www.justonecookbook.com/wp-content/uploads/2023/04/Spicy-Shoyu-Ramen-8055-I-500x375.jpg"
-                        alt="" /><span>noodles</span>
-                </li>
-                <li>
-                    <img src="https://www.justonecookbook.com/wp-content/uploads/2023/04/Spicy-Shoyu-Ramen-8055-I-500x375.jpg"
-                        alt="" /><span>noodles</span>
-                </li>
-                <li>
-                    <img src="https://www.justonecookbook.com/wp-content/uploads/2023/04/Spicy-Shoyu-Ramen-8055-I-500x375.jpg"
-                        alt="" /><span>noodles</span>
-                </li>
-                <li>
-                    <img src="https://www.justonecookbook.com/wp-content/uploads/2023/04/Spicy-Shoyu-Ramen-8055-I-500x375.jpg"
-                        alt="" /><span>noodles</span>
-                </li>
-                <li>
-                    <img src="https://www.justonecookbook.com/wp-content/uploads/2023/04/Spicy-Shoyu-Ramen-8055-I-500x375.jpg"
-                        alt="" /><span>noodles</span>
-                </li>
-                <li>
-                    <img src="https://www.justonecookbook.com/wp-content/uploads/2023/04/Spicy-Shoyu-Ramen-8055-I-500x375.jpg"
-                        alt="" /><span>noodles</span>
-                </li>
-                <li>
-                    <img src="https://www.justonecookbook.com/wp-content/uploads/2023/04/Spicy-Shoyu-Ramen-8055-I-500x375.jpg"
-                        alt="" /><span>noodles</span>
-                </li>
-            </ul>
+        <!-- Custom Style sheet -->
+        <link rel="stylesheet" href="style.css" />
+
+         <!-- Javascript script tag -->
+         <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="mobile-container">
+            <header>
+                <input type="text" id="search-term" />
+                <button id="search"><i class="fas fa-search"></i></button>
+            </header>
+            <div class="fav-container">
+                <h3>Favorite Meals</h3>
+                <ul class="fav-meals" id="fav-meals"></ul>
+            </div>
+            <div class="meals" id="meals"></div>
         </div>
-        <!--Random MEALS -->
-        <div class="meals" id="meals">
-            
-            <div class="meal">
-                
-
+        
+        <div class="popup-container hidden" id="meal-popup">
+            <div class="popup">
+                <button id="close-popup" class="close-popup">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="meal-info" id="meal-info"></div>
             </div>
         </div>
-    </div>
 
-    <script src="index.js"></script>
-</body>
-
-</html>
+       
+    </body>
+    </html>
+    
