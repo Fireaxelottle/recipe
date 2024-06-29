@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Recipes App</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- font awesome -->
-        <script src="https://kit.fontawesome.com/3178cb280c.js" crossorigin="anonymous"></script>
+    <title>Recipes App</title>
 
-        <!-- Custom Style sheet -->
-        <link rel="stylesheet" href="style.css" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3178cb280c.js" crossorigin="anonymous"></script>
 
-         <!-- Javascript script tag -->
-         <script src="script.js" defer></script>
-    </head>
-    <body>
-        <div class="mobile-container">
-            <header>
+    <!-- Custom Style sheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Javascript script tag -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="mobile-container">
+        <header>
+            <h2>Recpie App By WattBit</h2>
+            <form action="" id="form">
                 <input type="text" id="search-term" />
                 <button id="search"><i class="fas fa-search"></i></button>
-            </header>
-            <div class="fav-container">
-                <h3>Favorite Meals</h3>
-                <ul class="fav-meals" id="fav-meals"></ul>
-            </div>
-            <div class="meals" id="meals"></div>
-        </div>
-        
-        <div class="popup-container hidden" id="meal-popup">
-            <div class="popup">
-                <button id="close-popup" class="close-popup">
-                    <i class="fas fa-times"></i>
-                </button>
-                <div class="meal-info" id="meal-info"></div>
-            </div>
-        </div>
+            </form>
 
-       
-    </body>
-    </html>
-    
+        </header>
+        <div class="fav-container">
+            <h3>Favorite Meals</h3>
+            <ul class="fav-meals" id="fav-meals"></ul>
+        </div>
+        <div class="meals" id="meals"></div>
+        <footer>
+            <small>
+                WattBit&copy;
+            </small>
+        </footer>
+    </div>
+
+    <div class="popup-container hidden" id="meal-popup">
+        <div class="popup">
+            <button id="close-popup" class="close-popup">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="meal-info" id="meal-info">
+                <h1></h1>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
